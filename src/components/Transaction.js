@@ -6,7 +6,7 @@ export const Transaction = ({ transaction }) => {
 
     return (
         <li className={color}>
-            {transaction.text} <span> {sign}Rp. {Math.abs(transaction.amount)}</span><button className="delete-btn"></button>
+            {transaction.text} <span> {sign}Rp. {Math.abs(transaction.amount).toLocaleString()}</span><button className="delete-btn"></button>
         </li>
     )
 }
